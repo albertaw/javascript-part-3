@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/simple.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -25,8 +25,151 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section id="title-page">
+					<h2>Javascript Part 3</h2>
+					<h3>March 28, 2020</h3>
+					<h4>BDPA High School Coding Competition</h4>
+				</section>
+				<section id="classes">
+					<h2>Classes</h2>
+				</section>
+				<section id="introduction">
+					<h2>Introduction</h2>
+					<p>
+						A class is code that specifies the data attributes and methods for a particular type of object. Attributes are characteristics that a class has. Methods are what the object can do.
+					</p>
+				</section>
+				<section id="example1">
+					<p>
+						Creating a class:
+					</p>
+					<pre><code data-trim>
+						class Robot {
+							constructor(x, y, degrees) {
+								this.xPosition = x;
+								this.yPosition = y;
+								this.angle = degrees;
+							}
+
+							move() { }
+
+							turnLeft() { }
+
+							putGold() { }
+						}
+					</code></pre>
+					<p>Creating an object:</p>
+					<pre><code data-trim>
+						let berta = new Robot(0, 0, 90);
+						berta.move();
+					</code></pre>
+				</section>
+				<section id="example2">
+					Create a ShoppingCart class that has a list of items and lets us add items to the cart, remove items from the cart, and checkout. 
+				</section>
+				<section id="solution2">
+					<h2>Solution</h2>
+					<pre><code data-trim>
+						class ShoppingCart {
+							constructor() {
+								this.items = [];
+							}
+
+							addItem(item) { }
+
+							removeItem(item) { }
+
+							checkOut() { }
+						} 
+					</code></pre>
+				</section>
+				<section id="example3">
+					Design a class for a Library. 
+				</section>
+				<section id="solution3">
+					<h2>Solution</h2>
+					<pre><code data-trim>
+						class Library {
+							constructor() {
+								this.books = [];
+							}
+
+							checkin(book) { }
+
+							checkout(book) { }
+						}
+					</code></pre>
+				</section>
+
+				<section id="example4">
+					Design a class for a cell phone.
+				</section>
+
+				<section id="solution4">
+					<h2>Solution</h2>
+					<pre><code data-trim>
+						class CellPhone {
+							constructor(myNumber) {
+								this.number = myNumber;
+								this.contacts = [];
+								this.messages = [];
+							}
+
+							startCall() { }
+
+							endCall() { }
+
+							createMessage() { }
+
+							deleteMessage() { }
+						}
+					</code></pre>
+				</section>
+
+				<section id="example5">
+					Design a class for an Instagram post.
+				</section>
+
+				<section id="solution5">
+					<h2>Solution</h2>
+					<pre><code data-trim>
+						class Post {
+							constructor() {
+								this.author;
+								this.date;
+								this.content;
+								this.comments = [];
+							}
+
+							editPost() { }
+
+							deletePost() { }
+
+							likePost() { }
+						}
+					</code></pre>
+				</section>
+
+				<section id="example6">
+					Design a class for a music player like Spotify.
+				</section>
+				
+				<section id="solution6">
+					<h2>Solution</h2>
+					<pre><code data-trim>
+						class Player { 
+							constructor() {
+								this.volume;
+								this.songs = [];
+
+								play() { }
+								pause() { }
+								next() { }
+								previous() { }
+							}
+						}
+					</code></pre>
+				</section>
 			</div>
 		</div>
 
@@ -48,3 +191,5 @@
 		</script>
 	</body>
 </html>
+
+
